@@ -1,0 +1,385 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-dark-bg: #080808;
+  --color-dark-surface: #0f0f0f;
+  --color-dark-elevated: #161616;
+  --color-dark-border: #1f1f1f;
+  --color-dark-text: #ededed;
+  --color-dark-muted: #888888;
+
+  --color-light-bg: #f7f6f3;
+  --color-light-surface: #ffffff;
+  --color-light-elevated: #f0eeea;
+  --color-light-border: #e6e3dd;
+  --color-light-text: #1f1c18;
+  --color-light-muted: #78716c;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body { background-color: var(--color-dark-bg); color: var(--color-dark-text); }
+html.light body { background-color: var(--color-light-bg); color: var(--color-light-text); }
+
+/* ==================== VitePress nav ==================== */
+.VPNavBar {
+  background-color: transparent !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+html.dark .VPNavBar { border-bottom: 1px solid var(--color-dark-border) !important; }
+html.light .VPNavBar {
+  border-bottom: 1px solid var(--color-light-border) !important;
+  background: rgba(247,246,243,0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.VPNavBarMenu { display: none !important; }
+html.dark .VPNavBarTitle .title { color: #d4d4d4; }
+html.light .VPNavBarTitle .title { color: #2d2822; }
+.VPNavScreen .VPNavScreenMenu { display: block; }
+
+/* ==================== Scrollbar ==================== */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+html.light ::-webkit-scrollbar-thumb { background: #ccc; }
+
+a { text-decoration: none; }
+
+/* ==================== Background bands ==================== */
+.bg-raised { background: var(--color-dark-surface); }
+html.light .bg-raised { background: var(--color-light-elevated); }
+
+.bg-dots {
+  background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+html.light .bg-dots {
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+}
+
+/* ==================== Hero glow ==================== */
+.hero-glow { position: relative; }
+.hero-glow::before {
+  content: '';
+  position: absolute;
+  top: -40%; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(139,92,246,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+html.light .hero-glow::before {
+  background: radial-gradient(circle, rgba(124,58,237,0.04) 0%, transparent 70%);
+}
+
+/* ==================== Section divider ==================== */
+.section-divider {
+  width: 100%; height: 1px;
+  background: var(--color-dark-border);
+  opacity: 0.6;
+}
+html.light .section-divider { background: var(--color-light-border); opacity: 1; }
+
+/* ==================== Card ==================== */
+.card {
+  border-radius: 14px;
+  border: 1px solid var(--color-dark-border);
+  background: var(--color-dark-elevated);
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+html.light .card {
+  border: 1px solid #e0dcd6;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.03);
+}
+.card:hover {
+  border-color: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+html.light .card:hover {
+  border-color: #c5bfb5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.07);
+}
+
+/* Card with purple accent top line */
+.card-accent {
+  border-radius: 14px;
+  border: 1px solid var(--color-dark-border);
+  background: var(--color-dark-elevated);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+.card-accent::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+html.light .card-accent::before {
+  background: linear-gradient(90deg, #7c3aed, #8b5cf6);
+}
+.card-accent:hover {
+  border-color: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+.card-accent:hover::before { opacity: 1; }
+html.light .card-accent {
+  border: 1px solid #e0dcd6;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.03);
+}
+html.light .card-accent:hover {
+  border-color: #c5bfb5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.07);
+}
+
+/* ==================== Tag ==================== */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-dark-border);
+  color: var(--color-dark-muted);
+  background: transparent;
+}
+html.light .tag {
+  border-color: #d5cfc8;
+  color: #6b6560;
+}
+
+/* Accent tag: visible purple in both modes */
+.tag-accent {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 9999px;
+  color: #e8e0ff;
+  background: rgba(124,58,237,0.25);
+  border: 1px solid rgba(139,92,246,0.3);
+}
+html.light .tag-accent {
+  color: #fff;
+  background: #7c3aed;
+  border: 1px solid #7c3aed;
+}
+
+/* ==================== Buttons ==================== */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 22px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--color-dark-border);
+  color: var(--color-dark-text);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+}
+html.light .btn-ghost {
+  border-color: #d5cfc8;
+  color: #1f1c18;
+}
+html.light .btn-ghost:hover {
+  background: rgba(0,0,0,0.03);
+  border-color: #b0a89e;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 22px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: #7c3aed;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(124,58,237,0.25);
+}
+html.light .btn-primary {
+  background: #6d28d9;
+  box-shadow: 0 2px 12px rgba(109,40,217,0.2);
+}
+.btn-primary:hover {
+  background: #8b5cf6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(124,58,237,0.35);
+}
+html.light .btn-primary:hover {
+  background: #7c3aed;
+  box-shadow: 0 4px 20px rgba(109,40,217,0.3);
+}
+
+/* ==================== Gradient text (hero title) ==================== */
+.gradient-text {
+  background: linear-gradient(135deg, #a78bfa, #c4b5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+html.light .gradient-text {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==================== Stat number ==================== */
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #c4b5fd;
+}
+html.light .stat-number {
+  color: #6d28d9;
+}
+
+/* ==================== Section heading ==================== */
+.section-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.section-eyebrow .dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #a78bfa;
+  box-shadow: 0 0 6px rgba(167,139,250,0.4);
+}
+html.light .section-eyebrow .dot {
+  background: #7c3aed;
+  box-shadow: none;
+}
+.section-eyebrow span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+}
+html.light .section-eyebrow span { color: #8c8279; }
+
+/* ==================== Animations ==================== */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fade-up 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(139,92,246,0.3); }
+  50% { box-shadow: 0 0 20px rgba(139,92,246,0.5); }
+}
+.animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+html.light .animate-pulse-glow {
+  animation-name: none;
+  box-shadow: 0 1px 3px rgba(124,58,237,0.15);
+}
+
+/* ==================== Prose (article pages) ==================== */
+.prose h1 { font-size: 2rem; font-weight: 700; margin-top: 0; margin-bottom: 0.5em; }
+.prose h2 { font-size: 1.25rem; font-weight: 600; margin-top: 2em; margin-bottom: 0.75em; }
+.prose h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5em; margin-bottom: 0.5em; }
+.prose p { margin-bottom: 1.25em; line-height: 1.8; }
+.prose code {
+  background-color: rgba(255,255,255,0.06);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+html.light .prose code {
+  background-color: #f0eeea;
+  color: #5d534a;
+}
+.prose pre {
+  background-color: #0f0f0f;
+  padding: 1.25em;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+  border: 1px solid #1f1f1f;
+}
+html.light .prose pre {
+  background-color: #f0eeea;
+  border-color: #e0dcd6;
+  color: #1f1c18;
+}
+.prose blockquote {
+  border-left: 2px solid #8b5cf6;
+  padding-left: 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #888;
+}
+html.light .prose blockquote {
+  border-left-color: #7c3aed;
+  color: #8c8279;
+}
+.prose ul, .prose ol { margin-bottom: 1em; padding-left: 1.5em; }
+.prose li { margin-bottom: 0.5em; }
+.prose a { color: #a78bfa; text-decoration: none; }
+html.light .prose a { color: #6d28d9; }
+.prose a:hover { text-decoration: underline; }
+
+/* ==================== Hero "作品集" button ==================== */
+.work-btn,
+html.light .work-btn,
+html.dark .work-btn {
+  color: #fff !important;
+}
+
+/* ==================== Hero nav buttons ==================== */
+/* Ensure high contrast in light mode: #111827 on white bg = 18.2:1, far exceeding WCAG 4.5:1 */
+html.light .hero-nav-link {
+  color: #4872ce !important;
+  font-weight: 500;
+}
+html.light .hero-nav-link:hover {
+  color: #000 !important;
+  background: rgba(0,0,0,0.04);
+}
+
+/* ==================== Light mode section borders ==================== */
+html.light .border-y {
+  border-top-color: #e0dcd6 !important;
+  border-bottom-color: #e0dcd6 !important;
+}
+html.light .border-t {
+  border-top-color: #e0dcd6 !important;
+}

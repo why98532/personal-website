@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'WHY',
   description: 'Personal website of WHY — builder, thinker, collector',
   appearance: false,
-  base: '/',
+  base: '/personal-website/',
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],

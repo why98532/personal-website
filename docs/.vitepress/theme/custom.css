@@ -274,7 +274,7 @@ html.light .stat-number {
   margin-bottom: 2rem;
 }
 .section-eyebrow .dot {
-  width: 7px; height: 7px;
+  width: 9px; height: 9px;
   border-radius: 50%;
   background: #a78bfa;
   box-shadow: 0 0 6px rgba(167,139,250,0.4);
@@ -284,7 +284,7 @@ html.light .section-eyebrow .dot {
   box-shadow: none;
 }
 .section-eyebrow span {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;

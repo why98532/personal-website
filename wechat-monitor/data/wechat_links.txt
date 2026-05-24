@@ -1,0 +1,6 @@
+# 微信公众号文章链接（每行一个）
+# 实际运行时替换为真实链接，目前使用模拟数据
+https://mp.weixin.qq.com/s/TH5KG1VjuPU2P8UEm5q07w
+https://mp.weixin.qq.com/s/Ho40Sd-oOzdLWrqKePHqkA
+https://mp.weixin.qq.com/s/pnYkVLJgcGlALE6BpOso_w
+https://mp.weixin.qq.com/s/0rbRDQo6Ys7yqGARvffURw

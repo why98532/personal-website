@@ -30,7 +30,7 @@
             </div>
             <div class="flex items-center gap-2.5">
               <Mail class="w-4 h-4 text-purple-500 flex-shrink-0" />
-              <a href="mailto:hello@example.com" class="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">hello@example.com</a>
+              <a href="mailto:why98532@126.com" class="text-purple-500 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">why98532@126.com</a>
             </div>
             <div class="flex items-center gap-2.5">
               <Briefcase class="w-4 h-4 text-purple-500 flex-shrink-0" />
@@ -90,9 +90,9 @@ const { isZh } = useLang()
 
 const messages = {
   about: { zh: '关于', en: 'About' },
-  role: { zh: 'AI 工程师 · 独立开发者', en: 'AI Engineer · Independent Developer' },
+  role: { zh: 'AI 工程师 · 独立开发者 · 未来探索者', en: 'AI Engineer · Independent Developer' },
   location: { zh: '中国 · 上海', en: 'Shanghai, China' },
-  experience: { zh: '10+ 年技术经验', en: '10+ years in tech' },
+  experience: { zh: '2+ 年技术经验', en: '10+ years in tech' },
   services: { zh: '可提供服务', en: 'What I offer' },
   process: { zh: '合作流程', en: 'How we work together' },
   findMe: { zh: '找到我', en: 'Find me on' },
@@ -116,8 +116,8 @@ const processList = [
 
 const socials = [
   { label: 'GitHub', icon: Github, url: 'https://github.com' },
-  { label: '小红书', icon: PenLine, url: 'https://xiaohongshu.com' },
+  { label: '小红书', icon: PenLine, url: 'https://www.xiaohongshu.com/user/profile/6051939f0000000001009545' },
   { label: '微信', icon: MessageCircle, url: '#' },
-  { label: '博客', icon: BookOpen, url: '/posts' },
+  { label: '微博', icon: BookOpen, url: 'https://weibo.com/u/7411035275' },
 ]
 </script>

@@ -73,7 +73,7 @@ const { isZh } = useLang()
 
 const messages = {
   title: { zh: '我的故事', en: 'My Story' },
-  subtitle: { zh: '从全栈工程师到 AI 独立开发者', en: 'From full-stack engineer to AI independent developer' },
+  subtitle: { zh: '从计算机小白到 AI 独立开发者', en: 'From full-stack engineer to AI independent developer' },
   career: { zh: '职业履历', en: 'Career' },
   growth: { zh: '能力升级路径', en: 'Growth Path' },
   strengths: { zh: '核心优势', en: 'Strengths' },
@@ -84,8 +84,8 @@ function t(key) { return isZh.value ? messages[key].zh : messages[key].en }
 const timeline = [
   { year: '24', role: { zh: 'AI 独立开发者', en: 'AI Independent Developer' }, company: { zh: '自由职业', en: 'Freelance' }, desc: { zh: '专注于 AI 应用开发和技术咨询，服务多个行业客户', en: 'Building AI applications and providing technical consulting for clients across multiple industries.' }, color: 'bg-purple-500' },
   { year: '21', role: { zh: '高级技术专家', en: 'Senior Tech Lead' }, company: { zh: '某大厂', en: 'Big Tech' }, desc: { zh: '负责核心系统架构设计和团队管理，主导了多个重要项目的技术方案', en: 'Led core system architecture design and team management. Drove technical strategy for key projects.' }, color: 'bg-emerald-500' },
-  { year: '18', role: { zh: '技术主管', en: 'Tech Lead' }, company: { zh: '某互联网公司', en: 'Internet Company' }, desc: { zh: '带领团队完成多个核心项目交付，推动前端工程化落地', en: 'Delivered multiple core projects and established frontend engineering practices across the team.' }, color: 'bg-purple-500' },
-  { year: '15', role: { zh: '全栈工程师', en: 'Full-stack Engineer' }, company: { zh: '创业公司', en: 'Startup' }, desc: { zh: '从 0 到 1 搭建产品技术体系，覆盖前后端和基础架构', en: 'Built product and technical infrastructure from zero to one, covering frontend, backend, and DevOps.' }, color: 'bg-amber-500' },
+  { year: '23', role: { zh: '技术主管', en: 'Tech Lead' }, company: { zh: '某互联网公司', en: 'Internet Company' }, desc: { zh: '带领团队完成多个核心项目交付，推动前端工程化落地', en: 'Delivered multiple core projects and established frontend engineering practices across the team.' }, color: 'bg-purple-500' },
+  { year: '18', role: { zh: '全栈工程师', en: 'Full-stack Engineer' }, company: { zh: '创业公司', en: 'Startup' }, desc: { zh: '从 0 到 1 搭建产品技术体系，覆盖前后端和基础架构', en: 'Built product and technical infrastructure from zero to one, covering frontend, backend, and DevOps.' }, color: 'bg-amber-500' },
 ]
 
 const growthPath = [

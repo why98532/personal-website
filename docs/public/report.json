@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "title": "公众号舆情监控报告",
+    "version": "0.1.0",
+    "generated_at": "2026-05-24T22:57:38.144135",
+    "data_source": "抓取 4 篇 / 模拟 0 篇 (共 4 个链接)",
+    "total_links": 4,
+    "fetched_count": 4,
+    "mock_count": 0
+  },
+  "part1_market_events": {
+    "title": "近一周市场重大事件摘要",
+    "events": [
+      {
+        "date": "2026-05-24",
+        "event": "央行宣布降准0.5个百分点，释放长期资金约1万亿",
+        "sentiment": "看涨"
+      },
+      {
+        "date": "2026-05-23",
+        "event": "国务院发布促进AI产业发展指导意见",
+        "sentiment": "看涨"
+      },
+      {
+        "date": "2026-05-22",
+        "event": "美国对华半导体出口管制升级，新增多家实体清单",
+        "sentiment": "看跌"
+      },
+      {
+        "date": "2026-05-21",
+        "event": "光伏组件价格持续下跌，行业开工率降至60%",
+        "sentiment": "看跌"
+      },
+      {
+        "date": "2026-05-20",
+        "event": "低空经济政策细则出台，多省市开放试飞空域",
+        "sentiment": "看涨"
+      },
+      {
+        "date": "2026-05-19",
+        "event": "12月社融数据超预期，新增贷款1.2万亿",
+        "sentiment": "看涨"
+      },
+      {
+        "date": "2026-05-18",
+        "event": "新能源车1月第二周上险量环比增长15%",
+        "sentiment": "看涨"
+      }
+    ],
+    "overall_sentiment": "看涨 (偏多)"
+  },
+  "part2_hot_sectors": {
+    "title": "当前热度前10大板块及其标的现状",
+    "sectors": [
+      {
+        "rank": 1,
+        "sector_name": "人工智能",
+        "representative_stocks": [
+          {
+            "code": "002230",
+            "name": "科大讯飞",
+            "price": 48.35,
+            "change_pct": 3.2
+          },
+          {
+            "code": "688111",
+            "name": "金山办公",
+            "price": 312.5,
+            "change_pct": 1.8
+          }
+        ],
+        "avg_change_pct": 2.5,
+        "trend": "上涨"
+      },
+      {
+        "rank": 2,
+        "sector_name": "新能源汽车",
+        "representative_stocks": [
+          {
+            "code": "300750",
+            "name": "宁德时代",
+            "price": 208.6,
+            "change_pct": -0.5
+          },
+          {
+            "code": "002594",
+            "name": "比亚迪",
+            "price": 282.3,
+            "change_pct": 2.1
+          }
+        ],
+        "avg_change_pct": 0.8,
+        "trend": "上涨"
+      },
+      {
+        "rank": 3,
+        "sector_name": "半导体",
+        "representative_stocks": [
+          {
+            "code": "688981",
+            "name": "中芯国际",
+            "price": 52.8,
+            "change_pct": 4.5
+          },
+          {
+            "code": "002371",
+            "name": "北方华创",
+            "price": 318.2,
+            "change_pct": 2.8
+          }
+        ],
+        "avg_change_pct": 3.65,
+        "trend": "上涨"
+      },
+      {
+        "rank": 4,
+        "sector_name": "光伏储能",
+        "representative_stocks": [
+          {
+            "code": "601012",
+            "name": "隆基绿能",
+            "price": 18.65,
+            "change_pct": -1.2
+          },
+          {
+            "code": "688599",
+            "name": "天合光能",
+            "price": 22.4,
+            "change_pct": -0.8
+          }
+        ],
+        "avg_change_pct": -1.0,
+        "trend": "下跌"
+      },
+      {
+        "rank": 5,
+        "sector_name": "医药生物",
+        "representative_stocks": [
+          {
+            "code": "600276",
+            "name": "恒瑞医药",
+            "price": 42.15,
+            "change_pct": 1.5
+          },
+          {
+            "code": "300760",
+            "name": "迈瑞医疗",
+            "price": 285.0,
+            "change_pct": 0.3
+          }
+        ],
+        "avg_change_pct": 0.9,
+        "trend": "上涨"
+      },
+      {
+        "rank": 6,
+        "sector_name": "白酒消费",
+        "representative_stocks": [
+          {
+            "code": "600519",
+            "name": "贵州茅台",
+            "price": 1680.0,
+            "change_pct": -0.3
+          },
+          {
+            "code": "000858",
+            "name": "五粮液",
+            "price": 128.5,
+            "change_pct": -0.6
+          }
+        ],
+        "avg_change_pct": -0.45,
+        "trend": "下跌"
+      },
+      {
+        "rank": 7,
+        "sector_name": "机器人",
+        "representative_stocks": [
+          {
+            "code": "300124",
+            "name": "汇川技术",
+            "price": 68.9,
+            "change_pct": 5.2
+          },
+          {
+            "code": "002747",
+            "name": "埃斯顿",
+            "price": 22.3,
+            "change_pct": 6.8
+          }
+        ],
+        "avg_change_pct": 6.0,
+        "trend": "上涨"
+      },
+      {
+        "rank": 8,
+        "sector_name": "低空经济",
+        "representative_stocks": [
+          {
+            "code": "002415",
+            "name": "海康威视",
+            "price": 35.2,
+            "change_pct": 1.1
+          },
+          {
+            "code": "300699",
+            "name": "光威复材",
+            "price": 28.75,
+            "change_pct": 3.5
+          }
+        ],
+        "avg_change_pct": 2.3,
+        "trend": "上涨"
+      },
+      {
+        "rank": 9,
+        "sector_name": "数据要素",
+        "representative_stocks": [
+          {
+            "code": "300212",
+            "name": "易华录",
+            "price": 25.6,
+            "change_pct": 2.3
+          },
+          {
+            "code": "603444",
+            "name": "吉比特",
+            "price": 456.8,
+            "change_pct": -0.9
+          }
+        ],
+        "avg_change_pct": 0.7,
+        "trend": "上涨"
+      },
+      {
+        "rank": 10,
+        "sector_name": "创新药",
+        "representative_stocks": [
+          {
+            "code": "688180",
+            "name": "君实生物",
+            "price": 32.4,
+            "change_pct": 4.1
+          },
+          {
+            "code": "300347",
+            "name": "泰格医药",
+            "price": 58.3,
+            "change_pct": 2.7
+          }
+        ],
+        "avg_change_pct": 3.4,
+        "trend": "上涨"
+      }
+    ]
+  },
+  "part3_author_opinions": {
+    "title": "按公众号作者汇总观点",
+    "authors": [
+      {
+        "author_name": "徐倬迅的投资日记",
+        "article_count": 1,
+        "dominant_sentiment": "看空",
+        "articles": [
+          {
+            "article_title": "永远不要用你的理性，去对抗市场的疯狂",
+            "sentiment": "看空",
+            "core_opinion": "所以均值回归策略在极端的牛市和熊市行情中都不太舒服",
+            "source_link": "https://mp.weixin.qq.com/s/TH5KG1VjuPU2P8UEm5q07w",
+            "fetched": true
+          }
+        ]
+      },
+      {
+        "author_name": "利文斯顿",
+        "article_count": 1,
+        "dominant_sentiment": "看多",
+        "articles": [
+          {
+            "article_title": "兔子出现了……",
+            "sentiment": "看多",
+            "core_opinion": "今天这个新闻，基本上可以认为已经签协议了，当然，并非说完全没有不确定性了",
+            "source_link": "https://mp.weixin.qq.com/s/Ho40Sd-oOzdLWrqKePHqkA",
+            "fetched": true
+          }
+        ]
+      },
+      {
+        "author_name": "猫笔刀",
+        "article_count": 1,
+        "dominant_sentiment": "看多",
+        "articles": [
+          {
+            "article_title": "房子终于卖出去了",
+            "sentiment": "看多",
+            "core_opinion": "我当年贷了900，一年利息37左右，另外首付的600也有机会成本，总的算下来10年财务成本500-600",
+            "source_link": "https://mp.weixin.qq.com/s/pnYkVLJgcGlALE6BpOso_w",
+            "fetched": true
+          }
+        ]
+      },
+      {
+        "author_name": "赣北吧",
+        "article_count": 1,
+        "dominant_sentiment": "看空",
+        "articles": [
+          {
+            "article_title": "周末几件大事",
+            "sentiment": "看空",
+            "core_opinion": "美银那边已经有人喊\"这是超级泡沫的重演\"",
+            "source_link": "https://mp.weixin.qq.com/s/0rbRDQo6Ys7yqGARvffURw",
+            "fetched": true
+          }
+        ]
+      }
+    ],
+    "fetch_stats": {
+      "total_links": 4,
+      "fetched": 4,
+      "mock": 0
+    }
+  },
+  "part4_sector_advice": {
+    "title": "前五大细分板块建议（标注一致性）",
+    "recommendations": [
+      {
+        "rank": 1,
+        "name": "锂电",
+        "parent_sector": "新能源汽车",
+        "advice": "增持",
+        "advice_icon": "BUY",
+        "reason": "上游碳酸锂价格企稳回升，下游需求旺季来临",
+        "consistency_note": "[与作者利文斯顿一致]"
+      },
+      {
+        "rank": 2,
+        "name": "整车",
+        "parent_sector": "新能源汽车",
+        "advice": "持有",
+        "advice_icon": "HOLD",
+        "reason": "竞争加剧但龙头份额稳固，关注出海进展",
+        "consistency_note": ""
+      },
+      {
+        "rank": 3,
+        "name": "AI大模型",
+        "parent_sector": "人工智能",
+        "advice": "增持",
+        "advice_icon": "BUY",
+        "reason": "国产大模型密集发布，算力需求确定性高",
+        "consistency_note": "[与作者猫笔刀一致]"
+      },
+      {
+        "rank": 4,
+        "name": "人形机器人",
+        "parent_sector": "机器人",
+        "advice": "增持",
+        "advice_icon": "BUY",
+        "reason": "特斯拉Optimus量产在即，产业链订单有望爆发",
+        "consistency_note": "[与作者利文斯顿一致]"
+      },
+      {
+        "rank": 5,
+        "name": "光伏硅片",
+        "parent_sector": "光伏储能",
+        "advice": "减持",
+        "advice_icon": "SELL",
+        "reason": "产能过剩持续，价格战未见底，行业出清仍需时间",
+        "consistency_note": "[与作者徐倬迅的投资日记一致]"
+      }
+    ]
+  }
+}

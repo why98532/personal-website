@@ -12,16 +12,19 @@
 </template>
 
 <script setup>
+import { useData } from 'vitepress'
 import { useLang } from '../composables/useLang'
 
+const { site } = useData()
 const { isZh } = useLang()
+const base = site.value.base
 
 const items = [
-  { key: 'home', zh: '首页', en: 'Home', link: '/' },
-  { key: 'story', zh: '故事', en: 'Story', link: '/story' },
-  { key: 'work', zh: '作品', en: 'Work', link: '/projects' },
-  { key: 'writing', zh: '文章', en: 'Writing', link: '/posts' },
-  { key: 'about', zh: '关于', en: 'About', link: '/about' },
+  { key: 'home', zh: '首页', en: 'Home', link: base },
+  { key: 'story', zh: '故事', en: 'Story', link: `${base}story` },
+  { key: 'writing', zh: '文章', en: 'Writing', link: `${base}posts` },
+  { key: 'achievements', zh: '成果', en: 'Achievements', link: `${base}achievements` },
+  { key: 'about', zh: '关于', en: 'About', link: `${base}about` },
 ]
 </script>
 

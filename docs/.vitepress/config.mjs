@@ -15,8 +15,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '故事', link: '/story' },
-      { text: '作品', link: '/projects' },
       { text: '文章', link: '/posts' },
+      { text: '成果', link: '/achievements' },
       { text: '关于', link: '/about' }
     ],
   },
